@@ -37,7 +37,7 @@
         <div class="box-body">
       
 
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-striped tablas">
 
               <thead>
 
@@ -98,15 +98,115 @@
 
     <!-- Modal content-->
     <div class="modal-content">
+
+      <form role="form" method="post" enctype="multipart/form-data">
+
+
       <div class="modal-header" style="background:#3c8dbc; color:white;">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">AgAgregar Usuario</h4>
+        <h4 class="modal-title">Agregar Usuario</h4>
       </div>
+
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+      
+      <div class="box-body">
+
+        <!-- Agregar nombre  -->
+
+        <div class="form-group">
+
+          <div class="input-group">
+
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+
+            <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Ingrese nombre" required>
+            
+          </div>
+        
+      </div>
+
+      <!-- ENTRADA PARA EL USUARIO  -->
+
+      <div class="form-group">
+
+          <div class="input-group">
+
+            <span class="input-group-addon"><i class="fa fa-key"></i></span>
+
+            <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingrese Usuario" required>
+            
+          </div>
+
+        </div>
+
+ <!-- ENTRADA PARA EL contrasena -->
+
+      <div class="form-group">
+
+          <div class="input-group">
+
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+
+            <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar Password" required>
+            
+          </div>
+
+        </div>
+
+         <!-- ENTRADA PARA EL USUARIO  -->
+
+      <div class="form-group">
+
+          <div class="input-group">
+
+            <span class="input-group-addon"><i class="fa fa-users"></i></span>
+
+            <select class="form-control input-lg" name="nuevoPerfil">
+              
+
+              <option value="">Selectionar Perfil</option>
+
+              <option value="Administrador">Administrador</option>
+
+              <option value="Especial">Especia;</option>
+
+              <option value="Vendedor">Vendedor</option>
+
+            </select>
+            
+          </div>
+
+        </div>
+
+        <!-- entrada para subir la foto -->
+
+        <div class="form-group">
+
+        <div class="panel ">
+
+          SUBIR FOTO
+          
+
+        </div>
+
+        <input type="file" id="nuevaFoto" name="nuevaFoto">
+
+        <p class="help-block">Perso MAximo de la foto 200mb</p>
+
+        <img src="vistas/img/default/anonimous.png" class="img-thumbnail" width="100px">
+
+        </div>
+
+      </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-defuault pull left" data-dismiss="modal">Salir</button>
+
+
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </form>
       </div>
     </div>
 
