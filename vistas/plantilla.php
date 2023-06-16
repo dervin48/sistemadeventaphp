@@ -14,7 +14,6 @@ session_start();
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
 
-
     <link rel="stylesheet" href="vistas/modulos/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="vistas/modulos/bower_components/font-awesome/css/font-awesome.min.css">
@@ -37,7 +36,9 @@ session_start();
   <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
-     <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css"> -->
+     <!-- <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/reponsive.bootstrap.min.css"> -->
+     <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
 
 <!--=====================================
 =          Plugins JavaScrtipt            =
@@ -58,6 +59,12 @@ session_start();
   <!-- AdminLTE for demo purposes -->
   <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
   <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <!-- <script src="vistas/bower_components/datatables.net/js/dataTables.responsive.min.js"></script> -->
+  <!-- <script src="vistas/bower_components/datatables.net-bs/js/reponsive.bootstrap.min.js"></script> -->
+  <!-- <script src="sweetalert2.all.min.js"></script> -->
+  <!-- <script src="sweetalert2.min.js"></script> -->
+
+
 
 
 </head>
