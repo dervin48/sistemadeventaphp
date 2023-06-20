@@ -191,7 +191,7 @@
 
         <input type="file" id="nuevaFoto" name="nuevaFoto">
 
-        <p class="help-block">Perso MAximo de la foto 200mb</p>
+        <p class="help-block">Perso Maximo de la foto 200mb</p>
 
         <img src="vistas/img/default/anonimous.png" class="img-thumbnail" width="100px">
 
