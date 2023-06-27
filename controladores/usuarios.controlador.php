@@ -25,6 +25,9 @@ class ControladorUsuarios{
 
                 if(is_array($respuesta) && $respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar){
 
+                    if ($respuestaCliente["estado"]==1) {
+                
+
                     if($respuesta["estado"] == 1){
 
                         $_SESSION["iniciarSesion"] = "ok";
@@ -77,11 +80,12 @@ class ControladorUsuarios{
                 }
 
             }   
-
+}
         
-}}
+}
 
 
+ 
     /*=============================================
     REGISTRO DE USUARIO
     =============================================*/
@@ -229,9 +233,9 @@ class ControladorUsuarios{
 
 
         }
-}
-    
 
+
+    }
 /*=============================================
 =            MOSTRAR USUARIO            =
 =============================================*/
@@ -423,5 +427,5 @@ static public function ctrMostrarUsuarios($item, $valor){
             }
 
         }
-
-    }}
+}
+    
