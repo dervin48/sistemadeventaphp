@@ -83,13 +83,12 @@ class ControladorUsuarios{
 }
         
 }
-
+}
 
  
     /*=============================================
     REGISTRO DE USUARIO
     =============================================*/
-
     static public function ctrCrearUsuario(){
 
         if(isset($_POST["nuevoUsuario"])){
@@ -236,6 +235,7 @@ class ControladorUsuarios{
 
 
     }
+
 /*=============================================
 =            MOSTRAR USUARIO            =
 =============================================*/
@@ -427,5 +427,5 @@ static public function ctrMostrarUsuarios($item, $valor){
             }
 
         }
-}
+}}
     
