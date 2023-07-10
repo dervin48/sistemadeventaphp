@@ -25,7 +25,6 @@ class ControladorUsuarios{
 
                 if(is_array($respuesta) && $respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar){
 
-                    if ($respuestaCliente["estado"]==1) {
                 
 
                     if($respuesta["estado"] == 1){
@@ -41,7 +40,7 @@ class ControladorUsuarios{
                         REGISTRAR FECHA PARA SABER EL ÚLTIMO LOGIN
                         =============================================*/
 
-                        date_default_timezone_set('America/Bogota');
+                        date_default_timezone_set('America/Belize');
 
                         $fecha = date('Y-m-d');
                         $hora = date('H:i:s');
@@ -83,7 +82,7 @@ class ControladorUsuarios{
 }
         
 }
-}
+
 
  
     /*=============================================
@@ -253,7 +252,7 @@ static public function ctrMostrarUsuarios($item, $valor){
 =          Editar Usuario               =
 =============================================*/
 
-    static public function ctrEditarUsuario(){
+     static public function ctrEditarUsuario(){
 
         if(isset($_POST["editarUsuario"])){
 
@@ -427,5 +426,55 @@ static public function ctrMostrarUsuarios($item, $valor){
             }
 
         }
-}}
+}
+/*=============================================
+=           Borrar Usuario           =
+=============================================*/
+
+static public function ctrBorrarUsuario(){
+
+        if(isset($_GET["idUsuario"])){
+
+            $tabla ="user";
+            $datos = $_GET["idUsuario"];
+
+            if($_GET["fotoUsuario"] != ""){
+
+                unlink($_GET["fotoUsuario"]);
+                rmdir('vistas/img/usuarios/'.$_GET["usuario"]);
+
+            }
+
+            $respuesta = ModeloUsuarios::mdlBorrarUsuario($tabla, $datos);
+
+            if($respuesta == "ok"){
+
+                echo'<script>
+
+                swal({
+                      type: "success",
+                      title: "El usuario ha sido borrado correctamente",
+                      showConfirmButton: true,
+                      confirmButtonText: "Cerrar",
+                      closeOnConfirm: false
+                      }).then(function(result) {
+                                if (result.value) {
+
+                                window.location = "usuarios";
+
+                                }
+                            })
+
+                </script>';
+
+            }       
+
+        }
+
+    }
+
+
+}
     
+
+

@@ -84,7 +84,7 @@
 
                   if($value["estado"]!=0){
 
-                    echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario= "0" >Activado</button></td>';
+                    echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id"].'" estadoUsuario= "0">Activado</button></td>';
 
                   }else{
 
@@ -98,7 +98,7 @@
 
                   <button class="btn btn-warning btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarUsuario"><i class="fa fa-pencil"></i></button>
 
-                  // <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times"></i></button>
+                  <button class="btn btn-danger btnEliminarUsuario" idUsuario="'.$value["id"].'" fotoUsuario="'.$value["foto"].'" usuario="'.$value["usuario"].'"><i class="fa fa-times"></i></button>
 
                   </div>
 
@@ -109,40 +109,17 @@
 
 
                 ?>
-                <tr>
-                  <td>1</td>
-                  <td>Usuario Administrador</td>
-                  <td>admin</td>
-                  <td><img src="vistas/img/default/anonimous.png" class="img-thumbnail" width="40px"></td>
-                  <td>Administrador</td>
-                  <td><button class="btn btn-success btn-xs"> Activado</button></td>
-                  <td>2013-12-11 12:05:32</td>
+        </tbody>
 
-                  <td>
-                    <div class="btn-group">
+       </table>
 
-                      <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+      </div>
 
-                      <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+    </div>
 
-                    </div>
-                </tr>
+  </section>
 
-              </tbody>
-
-
-
-
-            </table>
-
-
-     
-      <!-- /.box -->
-
-    </section>
-    <!-- /.content -->
-  </div>
-
+</div>
 
 
 
@@ -436,3 +413,7 @@ MODAL EDITAR USUARIO
   </div>
 
 </div>
+<?php
+  $borrarUsuario = new ControladorUsuarios();
+  $borrarUsuario -> ctrBorrarUsuario();
+?>

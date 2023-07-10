@@ -128,13 +128,6 @@
           <button type="submit" class="btn btn-primary">Guardar Categoria</button>
 
         </div>
-        <?php
-
-        $crearCategoria = new ControladorCategorias();
-        $crearCategoria -> ctrCrearCategoria();
-        
-
-        ?>
 
 
       </form>
