@@ -170,5 +170,6 @@ echo '</div>';
 
 <script src="vistas/js/plantillas.js"></script>
 <script src="vistas/js/usuarios.js"></script>
+<script src="vistas/js/categorias.js"></script>
 </body>
 </html>
